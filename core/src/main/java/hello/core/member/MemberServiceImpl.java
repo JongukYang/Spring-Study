@@ -3,7 +3,17 @@ package hello.core.member;
 public class MemberServiceImpl implements MemberService{
 
     // 추상화에도 의존하고 구현체에도 의존함 DIP 위반 -> 설계 오류
-    private final MemberRepository memberRepository = new MemoryMemberRepository();
+//    private final MemberRepository memberRepository = new MemoryMemberRepository();
+    /**
+     * AppConfig를 통한 해결 방법
+     * 생성자를 통해서 Repository 구현체에 뭐가 들어갈지 생성자를 통해 구현
+     * 따라서 구현체 클래스에는 Interface만 존재하게 되어서 DIP를 지키게 됨
+     */
+    private final MemberRepository memberRepository;
+
+    public MemberServiceImpl(MemberRepository memberRepository) {
+        this.memberRepository = memberRepository;
+    }
 
     @Override
     public void join(Member member) {
