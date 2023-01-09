@@ -9,7 +9,11 @@ import hello.core.member.MemberServiceImpl;
 import hello.core.member.MemoryMemberRepository;
 import hello.core.order.OrderService;
 import hello.core.order.OrderServiceImpl;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 
+// Spring으로 바꿔보기
+@Configuration
 public class AppConfig {
     /**
      * DIP와 OCP를 지키게 하기 위한 인터페이스를 연결해주는 클래스
@@ -20,15 +24,19 @@ public class AppConfig {
      * 생성자를 통해 객체가 생성됨 -> 이거를 '생성자 주입' 이라고 함
      */
     // AppConfig Refactoring -> Command + Option + M
+    // Bean을 붙여주면 Spring Container에 붙게 됨
+    @Bean
     public MemberService memberService() {
         return new MemberServiceImpl(memberRepository());
     }
 
     // 리펙토링한 메소드, 역할이 잘 보이게 함 / new로 호출이 아닌 메소드 호출 / 중복 제거
-    private MemberRepository memberRepository() {
+    @Bean
+    public MemberRepository memberRepository() {
         return new MemoryMemberRepository();
     }
 
+    @Bean
     public OrderService orderService() {
         return new OrderServiceImpl(
                 memberRepository(),
@@ -37,6 +45,7 @@ public class AppConfig {
     }
 
     // 메소드 명을 가지고 역할을 보기 쉽게 명시해줌
+    @Bean
     public DiscountPolicy discountPolicy() {
         // 할인 방식 바꾸기 -> AppConfig를 사용하기 때문에 정말 쉽게 알아볼 수 있고 변경도 쉬움 -> 객체지향의 장점
 //        return new FixDiscountPolicy();
