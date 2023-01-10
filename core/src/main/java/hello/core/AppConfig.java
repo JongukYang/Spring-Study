@@ -24,7 +24,7 @@ public class AppConfig {
      * 생성자를 통해 객체가 생성됨 -> 이거를 '생성자 주입' 이라고 함
      */
     // AppConfig Refactoring -> Command + Option + M
-    // Bean을 붙여주면 Spring Container에 붙게 됨
+    // Bean 을 붙여주면 Spring Container 에 붙게 됨
     @Bean
     public MemberService memberService() {
         return new MemberServiceImpl(memberRepository());
