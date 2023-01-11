@@ -24,4 +24,9 @@ public class MemberServiceImpl implements MemberService{
     public Member findMember(Long memberId) {
         return memberRepository.findById(memberId);
     }
+
+    // AppConfig에서 생성되어 주입되는 친구들 Singleton 형식인지 알아보기 위한 테스트 코드
+    public MemberRepository getMemberRepository() {
+        return memberRepository;
+    }
 }

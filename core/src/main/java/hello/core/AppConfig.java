@@ -27,17 +27,20 @@ public class AppConfig {
     // Bean 을 붙여주면 Spring Container 에 붙게 됨
     @Bean
     public MemberService memberService() {
+        System.out.println("Call AppConfig.memberService");
         return new MemberServiceImpl(memberRepository());
     }
 
     // 리펙토링한 메소드, 역할이 잘 보이게 함 / new로 호출이 아닌 메소드 호출 / 중복 제거
     @Bean
     public MemberRepository memberRepository() {
+        System.out.println("Call AppConfig.memberRepository");
         return new MemoryMemberRepository();
     }
 
     @Bean
     public OrderService orderService() {
+        System.out.println("Call AppConfig.orderService");
         return new OrderServiceImpl(
                 memberRepository(),
                 discountPolicy()

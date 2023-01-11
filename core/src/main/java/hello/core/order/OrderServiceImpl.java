@@ -47,4 +47,9 @@ public class OrderServiceImpl implements OrderService{
 
         return new Order(memberId, itemName, itemPrice, discountPrice); // 최종 할인 가격 리턴
     }
+
+    // AppConfig에서 생성되어 주입되는 친구들 Singleton 형식인지 알아보기 위한 테스트 코드
+    public MemberRepository getMemberRepository() {
+        return memberRepository;
+    }
 }
