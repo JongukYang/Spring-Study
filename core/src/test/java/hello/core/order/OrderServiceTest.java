@@ -25,6 +25,8 @@ public class OrderServiceTest {
     }
 
 
+
+
     @Test
     void createOrder() {
         Long memberId = 1L; // null을 넣을 수 없는 long 은 사용하지 않음 -> 레퍼런스 타입 사용
