@@ -3,10 +3,12 @@ package hello.core.discount;
 import hello.core.member.Grade;
 import hello.core.member.Member;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
 @Component
-@Qualifier("mainDiscountPolicy")
+//@Qualifier("mainDiscountPolicy")
+@Primary // 우선순위를 지정해주는 애노테이션.
 public class RateDiscountPolicy implements DiscountPolicy{
 
     // TestCase 만들기 커맨드 : Command + Shift + T -> Junit5

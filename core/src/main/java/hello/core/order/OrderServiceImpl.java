@@ -42,7 +42,7 @@ public class OrderServiceImpl implements OrderService{
 //    lombok에서 생성자를 자동으로 생성했기 때문에 생략 가능
 //    // AppConfig에서 구현 객체를 주입하였음 -> 생성자를 통해 구현 객체 주입
     @Autowired
-    public OrderServiceImpl(MemberRepository memberRepository, @Qualifier("mainDiscountPolicy") DiscountPolicy discountPolicy) {
+    public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discountPolicy) {
         this.memberRepository = memberRepository;
         this.discountPolicy = discountPolicy;
     }
