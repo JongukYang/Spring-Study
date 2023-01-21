@@ -8,10 +8,11 @@ import hello.core.member.MemberRepository;
 import hello.core.member.MemoryMemberRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
-@RequiredArgsConstructor // final이 붙은 필드에 대해 생성자를 자동으로 생성해줌
+//@RequiredArgsConstructor // final이 붙은 필드에 대해 생성자를 자동으로 생성해줌
 public class OrderServiceImpl implements OrderService{
     /**
      * 우리는 역할과 구현 충실히 분리하고, 다형성도 활용, 인터페이스를 통해 구현 객체를 분리함
@@ -40,11 +41,11 @@ public class OrderServiceImpl implements OrderService{
 
 //    lombok에서 생성자를 자동으로 생성했기 때문에 생략 가능
 //    // AppConfig에서 구현 객체를 주입하였음 -> 생성자를 통해 구현 객체 주입
-//    @Autowired
-//    public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discountPolicy) {
-//        this.memberRepository = memberRepository;
-//        this.discountPolicy = discountPolicy;
-//    }
+    @Autowired
+    public OrderServiceImpl(MemberRepository memberRepository, @Qualifier("mainDiscountPolicy") DiscountPolicy discountPolicy) {
+        this.memberRepository = memberRepository;
+        this.discountPolicy = discountPolicy;
+    }
 
     @Override
     public Order createOrder(Long memberId, String itemName, int itemPrice) {
