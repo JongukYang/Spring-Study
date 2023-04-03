@@ -5,7 +5,8 @@ on:
 
 name: Deploy String boot to Amazon EC2
 env:
-  PROJECT_NAME: Spring-Study/core
+  PROJECT_NAME: Spring-Study
+  working-directory: ./core
 
 jobs:
   deploy:
