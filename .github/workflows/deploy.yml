@@ -6,12 +6,13 @@ on:
 name: Deploy String boot to Amazon EC2
 env:
   PROJECT_NAME: Spring-Study
-  working-directory: ./core
 
 jobs:
   deploy:
     name: DEPLOY
     runs-on: ubuntu-22.04
+    env:
+      working-directory: ./core
 
     steps:
       - name: Checkout
