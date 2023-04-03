@@ -9,8 +9,10 @@ jobs:
   deploy:
     name: DEPLOY
     runs-on: ubuntu-22.04
+    # 루트 dir
     env:
       working-directory: ./core
+      
 
     steps:
       - name: Checkout
