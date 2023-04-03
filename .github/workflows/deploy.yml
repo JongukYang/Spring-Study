@@ -4,8 +4,6 @@ on:
       - main
 
 name: Deploy String boot to Amazon EC2
-env:
-  PROJECT_NAME: Spring-Study
 
 jobs:
   deploy:
