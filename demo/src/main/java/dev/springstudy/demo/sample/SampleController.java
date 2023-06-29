@@ -1,4 +1,4 @@
-package dev.springstudy.demo;
+package dev.springstudy.demo.sample;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

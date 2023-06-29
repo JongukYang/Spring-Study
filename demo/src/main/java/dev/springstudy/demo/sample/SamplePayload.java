@@ -1,4 +1,4 @@
-package dev.springstudy.demo;
+package dev.springstudy.demo.sample;
 
 public class SamplePayload {
     private String name;
