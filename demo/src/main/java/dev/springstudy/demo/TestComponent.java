@@ -24,6 +24,7 @@ public class TestComponent {
         newPost.setContent("hslkerhlkhrlkh");
         newPost.setWriter("lhwhdndnr");
         newPost.setBoard(1);
+        System.out.println(this.postDao.createPost(newPost));
 
         List<PostDto> postDtoList = this.postDao.readPostAll();
         System.out.println(postDtoList.get(postDtoList.size() - 1));
