@@ -1,6 +1,7 @@
 package dev.springstudy.jpa.controller;
 
 import dev.springstudy.jpa.entity.dto.PostDto;
+import dev.springstudy.jpa.repository.PostRepository;
 import dev.springstudy.jpa.service.PostService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,9 +16,12 @@ import java.util.List;
 public class PostController {
     private static final Logger logger = LoggerFactory.getLogger(PostController.class);
     private final PostService postService;
+    // 인터페이스를 가져오는 이유는 인터페이스를 통해 PostRepositoryImpl 구현체에 접근할 수 있기 때문에 구현체가 바뀌면 컨트롤러도 바뀌는 상황을 방지하기 위함.
+    private final PostRepository postRepository;
 
-    public PostController(@Autowired PostService postService) { // spring ioc container 에서 bean 을 요구함
+    public PostController(@Autowired PostService postService,@Autowired PostRepository postRepository) { // spring ioc container 에서 bean 을 요구함
         this.postService = postService;
+        this.postRepository = postRepository;
     }
 
     @PostMapping()
