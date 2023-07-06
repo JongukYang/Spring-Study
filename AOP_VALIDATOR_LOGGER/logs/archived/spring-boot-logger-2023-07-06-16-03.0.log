@@ -1,0 +1,9 @@
+2023-07-06 16:03:56,961 INFO org.springframework.boot.StartupInfoLogger [main] Starting JpaApplication using Java 17.0.4.1 on Jongukui-MacBookPro.local with PID 60687 (/Users/jongukyang/GitHub-LocalRepo/Spring-Study/AOP_VALIDATOR_LOGGER/build/classes/java/main started by jongukyang in /Users/jongukyang/GitHub-LocalRepo/Spring-Study/AOP_VALIDATOR_LOGGER)
+2023-07-06 16:03:56,962 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.5.9, Spring v5.3.15
+2023-07-06 16:03:56,962 INFO org.springframework.boot.SpringApplication [main] The following profiles are active: local
+2023-07-06 16:03:59,992 INFO dev.aquashdw.jpa.config.DemoConfiguration [main] custom property: custom-property
+2023-07-06 16:03:59,993 INFO dev.aquashdw.jpa.config.DemoConfiguration [main] comma list item: comma
+2023-07-06 16:03:59,993 INFO dev.aquashdw.jpa.config.DemoConfiguration [main] comma list item: separated
+2023-07-06 16:03:59,993 INFO dev.aquashdw.jpa.config.DemoConfiguration [main] comma list item: list
+2023-07-06 16:03:59,993 INFO dev.aquashdw.jpa.config.DemoConfiguration [main] comma list item: to
+2023-07-06 16:03:59,993 INFO dev.aquashdw.jpa.config.DemoConfiguration [main] comma list item: value

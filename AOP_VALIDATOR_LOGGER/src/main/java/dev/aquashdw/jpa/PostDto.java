@@ -7,7 +7,7 @@ import javax.validation.constraints.Size;
 
 public class PostDto {
     private int id;
-    @NotBlank // String이 공백을 제외한 문자열인지
+    @NotBlank
     private String title;
 
     @NotBlank

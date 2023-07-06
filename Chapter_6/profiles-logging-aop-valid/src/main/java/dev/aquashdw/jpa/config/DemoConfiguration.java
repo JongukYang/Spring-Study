@@ -15,28 +15,30 @@ import java.util.List;
 public class DemoConfiguration {
     private static final Logger logger = LoggerFactory.getLogger(DemoConfiguration.class);
 
-    @Value("${custom.property.single}")
-    private String customProperty;
 
-    @Value("${custom.property.comlist}")
-    private List<String> customCommaList;
 
-    public DemoConfiguration(){
-    }
-
-    @PostConstruct
-    public void init() {
-        logger.info("custom property: {}", customProperty);
-
-        for (String commaListItem:
-             customCommaList) {
-            logger.info("comma list item: {}", commaListItem);
-        }
-    }
-
-    @Bean
-    public Gson gson(){
-        return new Gson();
-    }
+//    @Value("${custom.property.single}")
+//    private String customProperty;
+//
+//    @Value("${custom.property.comlist}")
+//    private List<String> customCommaList;
+//
+//    public DemoConfiguration(){
+//    }
+//
+//    @PostConstruct
+//    public void init() {
+//        logger.info("custom property: {}", customProperty);
+//
+//        for (String commaListItem:
+//             customCommaList) {
+//            logger.info("comma list item: {}", commaListItem);
+//        }
+//    }
+//
+//    @Bean
+//    public Gson gson(){
+//        return new Gson();
+//    }
 
 }

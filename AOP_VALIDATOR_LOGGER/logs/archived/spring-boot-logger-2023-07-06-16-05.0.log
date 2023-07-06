@@ -1,0 +1,12 @@
+2023-07-06 16:05:00,611 INFO dev.aquashdw.jpa.PostController [http-nio-8080-exec-9] deletePost, id:2
+2023-07-06 16:05:04,071 INFO dev.aquashdw.jpa.PostController [http-nio-8080-exec-10] updatePost, id:1
+2023-07-06 16:05:43,607 INFO org.springframework.boot.StartupInfoLogger [main] Starting JpaApplication using Java 17.0.4.1 on Jongukui-MacBookPro.local with PID 61542 (/Users/jongukyang/GitHub-LocalRepo/Spring-Study/AOP_VALIDATOR_LOGGER/build/classes/java/main started by jongukyang in /Users/jongukyang/GitHub-LocalRepo/Spring-Study/AOP_VALIDATOR_LOGGER)
+2023-07-06 16:05:43,608 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.5.9, Spring v5.3.15
+2023-07-06 16:05:43,608 INFO org.springframework.boot.SpringApplication [main] The following profiles are active: local
+2023-07-06 16:05:46,492 INFO dev.aquashdw.jpa.config.DemoConfiguration [main] custom property: custom-property
+2023-07-06 16:05:46,492 INFO dev.aquashdw.jpa.config.DemoConfiguration [main] comma list item: comma
+2023-07-06 16:05:46,492 INFO dev.aquashdw.jpa.config.DemoConfiguration [main] comma list item: separated
+2023-07-06 16:05:46,492 INFO dev.aquashdw.jpa.config.DemoConfiguration [main] comma list item: list
+2023-07-06 16:05:46,492 INFO dev.aquashdw.jpa.config.DemoConfiguration [main] comma list item: to
+2023-07-06 16:05:46,492 INFO dev.aquashdw.jpa.config.DemoConfiguration [main] comma list item: value
+2023-07-06 16:05:46,942 INFO org.springframework.boot.StartupInfoLogger [main] Started JpaApplication in 3.754 seconds (JVM running for 4.271)

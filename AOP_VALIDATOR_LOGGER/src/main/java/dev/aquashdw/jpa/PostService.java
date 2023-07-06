@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-@Service
+@Component
 public class PostService {
     private static final Logger logger = LoggerFactory.getLogger(PostService.class);
     private final PostDao postDao;

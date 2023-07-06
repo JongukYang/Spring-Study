@@ -1,0 +1,32 @@
+2023-07-06 16:04:00,435 INFO org.springframework.boot.StartupInfoLogger [main] Started JpaApplication in 4.09 seconds (JVM running for 4.59)
+2023-07-06 16:04:31,045 INFO org.springframework.boot.StartupInfoLogger [main] Starting JpaApplication using Java 17.0.4.1 on Jongukui-MacBookPro.local with PID 60955 (/Users/jongukyang/GitHub-LocalRepo/Spring-Study/AOP_VALIDATOR_LOGGER/build/classes/java/main started by jongukyang in /Users/jongukyang/GitHub-LocalRepo/Spring-Study/AOP_VALIDATOR_LOGGER)
+2023-07-06 16:04:31,045 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.5.9, Spring v5.3.15
+2023-07-06 16:04:31,045 INFO org.springframework.boot.SpringApplication [main] The following profiles are active: local
+2023-07-06 16:04:33,998 INFO dev.aquashdw.jpa.config.DemoConfiguration [main] custom property: custom-property
+2023-07-06 16:04:33,998 INFO dev.aquashdw.jpa.config.DemoConfiguration [main] comma list item: comma
+2023-07-06 16:04:33,998 INFO dev.aquashdw.jpa.config.DemoConfiguration [main] comma list item: separated
+2023-07-06 16:04:33,999 INFO dev.aquashdw.jpa.config.DemoConfiguration [main] comma list item: list
+2023-07-06 16:04:33,999 INFO dev.aquashdw.jpa.config.DemoConfiguration [main] comma list item: to
+2023-07-06 16:04:33,999 INFO dev.aquashdw.jpa.config.DemoConfiguration [main] comma list item: value
+2023-07-06 16:04:34,513 INFO org.springframework.boot.StartupInfoLogger [main] Started JpaApplication in 3.906 seconds (JVM running for 4.448)
+2023-07-06 16:04:45,951 INFO dev.aquashdw.jpa.PostController [http-nio-8080-exec-1] deletePost, id:2
+2023-07-06 16:04:49,136 INFO dev.aquashdw.jpa.PostDao [http-nio-8080-exec-3] createPost, id:PostEntity{id=1, title='dfdf', content='df', writer='whddnr', boardEntity=null}
+2023-07-06 16:04:51,237 INFO dev.aquashdw.jpa.PostDao [http-nio-8080-exec-4] createPost, id:PostEntity{id=2, title='dfdf', content='df', writer='whddnr', boardEntity=null}
+2023-07-06 16:04:52,082 INFO dev.aquashdw.jpa.PostDao [http-nio-8080-exec-5] createPost, id:PostEntity{id=3, title='dfdf', content='df', writer='whddnr', boardEntity=null}
+2023-07-06 16:04:53,957 TRACE dev.aquashdw.jpa.aspect.LoggingAspect [http-nio-8080-exec-6] method description: [public java.util.List dev.aquashdw.jpa.PostController.readPostAll()]
+2023-07-06 16:04:53,958 TRACE dev.aquashdw.jpa.aspect.LoggingAspect [http-nio-8080-exec-6] method name: [readPostAll]
+2023-07-06 16:04:53,959 TRACE dev.aquashdw.jpa.aspect.LoggingAspect [http-nio-8080-exec-6] declaring type: [class dev.aquashdw.jpa.PostController]
+2023-07-06 16:04:53,959 TRACE dev.aquashdw.jpa.aspect.LoggingAspect [http-nio-8080-exec-6] no arguments
+2023-07-06 16:04:54,165 TRACE dev.aquashdw.jpa.aspect.LoggingAspect [http-nio-8080-exec-6] method: [readPostAll]
+2023-07-06 16:04:54,165 TRACE dev.aquashdw.jpa.aspect.LoggingAspect [http-nio-8080-exec-6] return type: [interface java.util.List]
+2023-07-06 16:04:54,166 TRACE dev.aquashdw.jpa.aspect.LoggingAspect [http-nio-8080-exec-6] return value: [[PostDto{id=1, title='dfdf', content='df', writer='whddnr', boardId=0}, PostDto{id=2, title='dfdf', content='df', writer='whddnr', boardId=0}, PostDto{id=3, title='dfdf', content='df', writer='whddnr', boardId=0}]]
+2023-07-06 16:04:54,172 INFO dev.aquashdw.jpa.aspect.LoggingAspect [http-nio-8080-exec-6] List dev.aquashdw.jpa.PostController.readPostAll() executed in 217ms
+2023-07-06 16:04:54,789 TRACE dev.aquashdw.jpa.aspect.LoggingAspect [http-nio-8080-exec-7] method description: [public java.util.List dev.aquashdw.jpa.PostController.readPostAll()]
+2023-07-06 16:04:54,791 TRACE dev.aquashdw.jpa.aspect.LoggingAspect [http-nio-8080-exec-7] method name: [readPostAll]
+2023-07-06 16:04:54,791 TRACE dev.aquashdw.jpa.aspect.LoggingAspect [http-nio-8080-exec-7] declaring type: [class dev.aquashdw.jpa.PostController]
+2023-07-06 16:04:54,792 TRACE dev.aquashdw.jpa.aspect.LoggingAspect [http-nio-8080-exec-7] no arguments
+2023-07-06 16:04:54,814 TRACE dev.aquashdw.jpa.aspect.LoggingAspect [http-nio-8080-exec-7] method: [readPostAll]
+2023-07-06 16:04:54,815 TRACE dev.aquashdw.jpa.aspect.LoggingAspect [http-nio-8080-exec-7] return type: [interface java.util.List]
+2023-07-06 16:04:54,815 TRACE dev.aquashdw.jpa.aspect.LoggingAspect [http-nio-8080-exec-7] return value: [[PostDto{id=1, title='dfdf', content='df', writer='whddnr', boardId=0}, PostDto{id=2, title='dfdf', content='df', writer='whddnr', boardId=0}, PostDto{id=3, title='dfdf', content='df', writer='whddnr', boardId=0}]]
+2023-07-06 16:04:54,816 INFO dev.aquashdw.jpa.aspect.LoggingAspect [http-nio-8080-exec-7] List dev.aquashdw.jpa.PostController.readPostAll() executed in 27ms
+2023-07-06 16:04:57,940 INFO dev.aquashdw.jpa.PostController [http-nio-8080-exec-8] readOnePost, id:1

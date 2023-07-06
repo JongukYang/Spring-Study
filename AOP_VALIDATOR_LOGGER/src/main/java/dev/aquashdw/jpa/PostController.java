@@ -3,7 +3,6 @@ package dev.aquashdw.jpa;
 import dev.aquashdw.jpa.aspect.LogArguments;
 import dev.aquashdw.jpa.aspect.LogExecutionTime;
 import dev.aquashdw.jpa.aspect.LogResults;
-import dev.aquashdw.jpa.exception.PostNotExistException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +13,7 @@ import javax.validation.Valid;
 import java.util.List;
 
 @RestController
-@RequestMapping("/post")
+@RequestMapping("post")
 public class PostController {
     private static final Logger logger = LoggerFactory.getLogger(PostController.class);
     private final PostService postService;
@@ -27,14 +26,15 @@ public class PostController {
 
     @PostMapping()
     @ResponseStatus(HttpStatus.CREATED)
-    public void createPost(@Valid @RequestBody PostDto dto) {
+    public void createPost(@Valid @RequestBody PostDto dto){
         this.postService.createPost(dto);
     }
 
     @GetMapping("{id}")
     public PostDto readPost(
             @PathVariable("id") int id
-    ) {
+    ){
+        logger.info("readOnePost, id:{}", id);
         return this.postService.readPost(id);
     }
 
@@ -51,7 +51,8 @@ public class PostController {
     public void updatePost(
             @PathVariable("id") int id,
             @RequestBody PostDto dto
-    ) {
+    ){
+        logger.info("updatePost, id:{}", id);
         this.postService.updatePost(id, dto);
     }
 
@@ -59,28 +60,23 @@ public class PostController {
     @ResponseStatus(HttpStatus.ACCEPTED)
     public void deletePost(
             @PathVariable("id") int id
-    ) {
+    ){
+        logger.info("deletePost, id:{}", id);
         this.postService.deletePost(id);
     }
 
     @GetMapping("test-log")
-    public void testLog() {
+    public void testLog(){
         logger.trace("TRACE Log Message");
         logger.debug("DEBUG Log Message");
         logger.info("INFO Log Message");
         logger.warn("WARN Log Message");
         logger.error("ERROR Log Message");
-
+        logger.info("현재 로거의 루트: ", logger.getName());
     }
 
     @PostMapping("test-valid")
     public void testValid(@Valid @RequestBody ValidTestDto dto) {
         logger.warn(dto.toString());
-        throw new PostNotExistException();
-    }
-
-    @GetMapping("test-exception")
-    public void throwException() {
-        throw new PostNotExistException();
     }
 }
