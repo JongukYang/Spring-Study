@@ -4,9 +4,10 @@ spring:
 
 logging:
   level:
+    root: warn # 모든 로그 출력됨
     # 로그 레벨이 trace라면 로그는 trace와 debug는 출력되지 않음 / default = info(info, warn, error 로그 출력됨)
     dev.aquashdw.jpa.aspect: trace
-#    root: trace # 모든 로그 출력됨
+
 
 custom:
   property:

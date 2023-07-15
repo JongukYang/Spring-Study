@@ -1,22 +1,22 @@
-2023-07-06 16:07:45,142 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
-2023-07-06 16:07:45,156 INFO org.springframework.boot.StartupInfoLogger [main] Starting JpaApplication using Java 17.0.4.1 on Jongukui-MacBookPro.local with PID 62490 (/Users/jongukyang/GitHub-LocalRepo/Spring-Study/AOP_VALIDATOR_LOGGER/build/classes/java/main started by jongukyang in /Users/jongukyang/GitHub-LocalRepo/Spring-Study/AOP_VALIDATOR_LOGGER)
-2023-07-06 16:07:45,158 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.5.9, Spring v5.3.15
-2023-07-06 16:07:45,158 INFO org.springframework.boot.SpringApplication [main] The following profiles are active: local
-2023-07-06 16:07:45,716 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-07-06 16:07:45,750 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 29 ms. Found 2 JPA repository interfaces.
-2023-07-06 16:07:46,313 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
-2023-07-06 16:07:46,320 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
-2023-07-06 16:07:46,321 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
-2023-07-06 16:07:46,321 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
-2023-07-06 16:07:46,376 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
-2023-07-06 16:07:46,376 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1142 ms
-2023-07-06 16:07:46,506 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-07-06 16:07:46,557 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.33
-2023-07-06 16:07:46,714 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2023-07-06 16:07:46,805 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
-2023-07-06 16:07:47,066 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2023-07-06 16:07:47,082 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2023-07-06 16:07:47,650 WARN org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl [main] GenerationTarget encountered exception accepting command : Error executing DDL "alter table post drop foreign key FK2t7katxxymxif93a9osshl0ns" via JDBC Statement
+2023-07-06 18:55:44,448 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2023-07-06 18:55:44,454 INFO org.springframework.boot.StartupInfoLogger [main] Starting JpaApplication using Java 17.0.4.1 on Jongukui-MacBookPro.local with PID 92774 (/Users/jongukyang/GitHub-LocalRepo/Spring-Study/AOP_VALIDATOR_LOGGER/build/classes/java/main started by jongukyang in /Users/jongukyang/GitHub-LocalRepo/Spring-Study/AOP_VALIDATOR_LOGGER)
+2023-07-06 18:55:44,454 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.5.9, Spring v5.3.15
+2023-07-06 18:55:44,455 INFO org.springframework.boot.SpringApplication [main] The following profiles are active: local
+2023-07-06 18:55:45,027 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-06 18:55:45,063 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 30 ms. Found 2 JPA repository interfaces.
+2023-07-06 18:55:45,679 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-07-06 18:55:45,687 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-07-06 18:55:45,688 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2023-07-06 18:55:45,688 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-07-06 18:55:45,746 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-07-06 18:55:45,746 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1241 ms
+2023-07-06 18:55:45,878 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-06 18:55:45,930 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.33
+2023-07-06 18:55:46,054 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-07-06 18:55:46,149 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2023-07-06 18:55:46,586 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-07-06 18:55:46,600 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-07-06 18:55:47,204 WARN org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl [main] GenerationTarget encountered exception accepting command : Error executing DDL "alter table post drop foreign key FK2t7katxxymxif93a9osshl0ns" via JDBC Statement
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table post drop foreign key FK2t7katxxymxif93a9osshl0ns" via JDBC Statement
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
 	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:375)
@@ -63,15 +63,15 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'demo_jpa_schema.post' doesn'
 	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
 	... 35 common frames omitted
-2023-07-06 16:07:47,717 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-07-06 16:07:47,723 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-07-06 16:07:47,979 INFO dev.aquashdw.jpa.config.DemoConfiguration [main] custom property: custom-property
-2023-07-06 16:07:47,980 INFO dev.aquashdw.jpa.config.DemoConfiguration [main] comma list item: comma
-2023-07-06 16:07:47,980 INFO dev.aquashdw.jpa.config.DemoConfiguration [main] comma list item: separated
-2023-07-06 16:07:47,980 INFO dev.aquashdw.jpa.config.DemoConfiguration [main] comma list item: list
-2023-07-06 16:07:47,980 INFO dev.aquashdw.jpa.config.DemoConfiguration [main] comma list item: to
-2023-07-06 16:07:47,980 INFO dev.aquashdw.jpa.config.DemoConfiguration [main] comma list item: value
-2023-07-06 16:07:48,070 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-07-06 16:07:48,440 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
-2023-07-06 16:07:48,451 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
-2023-07-06 16:07:48,459 INFO org.springframework.boot.StartupInfoLogger [main] Started JpaApplication in 3.776 seconds (JVM running for 4.382)
+2023-07-06 18:55:47,340 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-06 18:55:47,347 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-06 18:55:47,651 INFO dev.aquashdw.jpa.config.DemoConfiguration [main] custom property: custom-property
+2023-07-06 18:55:47,651 INFO dev.aquashdw.jpa.config.DemoConfiguration [main] comma list item: comma
+2023-07-06 18:55:47,651 INFO dev.aquashdw.jpa.config.DemoConfiguration [main] comma list item: separated
+2023-07-06 18:55:47,651 INFO dev.aquashdw.jpa.config.DemoConfiguration [main] comma list item: list
+2023-07-06 18:55:47,651 INFO dev.aquashdw.jpa.config.DemoConfiguration [main] comma list item: to
+2023-07-06 18:55:47,651 INFO dev.aquashdw.jpa.config.DemoConfiguration [main] comma list item: value
+2023-07-06 18:55:47,746 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-06 18:55:48,141 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-07-06 18:55:48,157 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-06 18:55:48,169 INFO org.springframework.boot.StartupInfoLogger [main] Started JpaApplication in 4.169 seconds (JVM running for 4.686)

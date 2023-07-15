@@ -1,0 +1,11 @@
+2023-07-06 18:56:00,870 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-06 18:56:00,870 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2023-07-06 18:56:00,871 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Completed initialization in 1 ms
+2023-07-06 18:56:00,894 TRACE dev.aquashdw.jpa.aspect.LoggingAspect [http-nio-8080-exec-2] method description: [public java.util.List dev.aquashdw.jpa.PostController.readPostAll()]
+2023-07-06 18:56:00,894 TRACE dev.aquashdw.jpa.aspect.LoggingAspect [http-nio-8080-exec-2] method name: [readPostAll]
+2023-07-06 18:56:00,894 TRACE dev.aquashdw.jpa.aspect.LoggingAspect [http-nio-8080-exec-2] declaring type: [class dev.aquashdw.jpa.PostController]
+2023-07-06 18:56:00,894 TRACE dev.aquashdw.jpa.aspect.LoggingAspect [http-nio-8080-exec-2] no arguments
+2023-07-06 18:56:01,009 TRACE dev.aquashdw.jpa.aspect.LoggingAspect [http-nio-8080-exec-2] method: [readPostAll]
+2023-07-06 18:56:01,009 TRACE dev.aquashdw.jpa.aspect.LoggingAspect [http-nio-8080-exec-2] return type: [interface java.util.List]
+2023-07-06 18:56:01,009 TRACE dev.aquashdw.jpa.aspect.LoggingAspect [http-nio-8080-exec-2] return value: [[]]
+2023-07-06 18:56:01,010 INFO dev.aquashdw.jpa.aspect.LoggingAspect [http-nio-8080-exec-2] List dev.aquashdw.jpa.PostController.readPostAll() executed in 116ms

@@ -1,0 +1,92 @@
+2023-07-06 18:58:00,131 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-07-06 18:58:00,149 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-07-06 18:58:00,716 WARN org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl [main] GenerationTarget encountered exception accepting command : Error executing DDL "alter table post drop foreign key FK2t7katxxymxif93a9osshl0ns" via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table post drop foreign key FK2t7katxxymxif93a9osshl0ns" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:375)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:359)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applyConstraintDropping(SchemaDropperImpl.java:331)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:230)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:154)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:126)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:112)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:145)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:318)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:468)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1259)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:447)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1356)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1345)
+	at dev.aquashdw.jpa.JpaApplication.main(JpaApplication.java:12)
+Caused by: java.sql.SQLSyntaxErrorException: Table 'demo_jpa_schema.post' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:763)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	... 35 common frames omitted
+2023-07-06 18:58:00,798 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-06 18:58:00,806 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-06 18:58:01,117 INFO dev.aquashdw.jpa.config.DemoConfiguration [main] custom property: custom-property
+2023-07-06 18:58:01,117 INFO dev.aquashdw.jpa.config.DemoConfiguration [main] comma list item: comma
+2023-07-06 18:58:01,117 INFO dev.aquashdw.jpa.config.DemoConfiguration [main] comma list item: separated
+2023-07-06 18:58:01,117 INFO dev.aquashdw.jpa.config.DemoConfiguration [main] comma list item: list
+2023-07-06 18:58:01,118 INFO dev.aquashdw.jpa.config.DemoConfiguration [main] comma list item: to
+2023-07-06 18:58:01,118 INFO dev.aquashdw.jpa.config.DemoConfiguration [main] comma list item: value
+2023-07-06 18:58:01,191 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-06 18:58:01,599 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-07-06 18:58:01,623 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-06 18:58:01,639 INFO org.springframework.boot.StartupInfoLogger [main] Started JpaApplication in 3.786 seconds (JVM running for 4.347)
+2023-07-06 18:58:12,366 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-06 18:58:12,367 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2023-07-06 18:58:12,368 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Completed initialization in 1 ms
+2023-07-06 18:58:12,394 TRACE dev.aquashdw.jpa.aspect.LoggingAspect [http-nio-8080-exec-2] method description: [public java.util.List dev.aquashdw.jpa.PostController.readPostAll()]
+2023-07-06 18:58:12,395 TRACE dev.aquashdw.jpa.aspect.LoggingAspect [http-nio-8080-exec-2] method name: [readPostAll]
+2023-07-06 18:58:12,395 TRACE dev.aquashdw.jpa.aspect.LoggingAspect [http-nio-8080-exec-2] declaring type: [class dev.aquashdw.jpa.PostController]
+2023-07-06 18:58:12,395 TRACE dev.aquashdw.jpa.aspect.LoggingAspect [http-nio-8080-exec-2] no arguments
+2023-07-06 18:58:12,539 TRACE dev.aquashdw.jpa.aspect.LoggingAspect [http-nio-8080-exec-2] method: [readPostAll]
+2023-07-06 18:58:12,539 TRACE dev.aquashdw.jpa.aspect.LoggingAspect [http-nio-8080-exec-2] return type: [interface java.util.List]
+2023-07-06 18:58:12,539 TRACE dev.aquashdw.jpa.aspect.LoggingAspect [http-nio-8080-exec-2] return value: [[]]
+2023-07-06 18:58:12,540 INFO dev.aquashdw.jpa.aspect.LoggingAspect [http-nio-8080-exec-2] List dev.aquashdw.jpa.PostController.readPostAll() executed in 146ms
+2023-07-06 18:58:12,540 INFO dev.aquashdw.jpa.aspect.LoggingAspect [http-nio-8080-exec-2] Proceed : 
+2023-07-06 18:58:48,969 TRACE dev.aquashdw.jpa.aspect.LoggingAspect [http-nio-8080-exec-3] method description: [public java.util.List dev.aquashdw.jpa.PostController.readPostAll()]
+2023-07-06 18:58:48,969 TRACE dev.aquashdw.jpa.aspect.LoggingAspect [http-nio-8080-exec-3] method name: [readPostAll]
+2023-07-06 18:58:48,969 TRACE dev.aquashdw.jpa.aspect.LoggingAspect [http-nio-8080-exec-3] declaring type: [class dev.aquashdw.jpa.PostController]
+2023-07-06 18:58:48,969 TRACE dev.aquashdw.jpa.aspect.LoggingAspect [http-nio-8080-exec-3] no arguments
+2023-07-06 18:58:48,973 TRACE dev.aquashdw.jpa.aspect.LoggingAspect [http-nio-8080-exec-3] method: [readPostAll]
+2023-07-06 18:58:48,973 TRACE dev.aquashdw.jpa.aspect.LoggingAspect [http-nio-8080-exec-3] return type: [interface java.util.List]
+2023-07-06 18:58:48,973 TRACE dev.aquashdw.jpa.aspect.LoggingAspect [http-nio-8080-exec-3] return value: [[]]
+2023-07-06 18:58:48,973 INFO dev.aquashdw.jpa.aspect.LoggingAspect [http-nio-8080-exec-3] List dev.aquashdw.jpa.PostController.readPostAll() executed in 4ms
+2023-07-06 18:58:48,973 INFO dev.aquashdw.jpa.aspect.LoggingAspect [http-nio-8080-exec-3] Proceed : 
+2023-07-06 18:58:53,312 INFO dev.aquashdw.jpa.PostDao [http-nio-8080-exec-4] createPost, id:PostEntity{id=1, title='dfdf', content='df', writer='whddnr', boardEntity=null}
+2023-07-06 18:58:58,386 TRACE dev.aquashdw.jpa.aspect.LoggingAspect [http-nio-8080-exec-5] method description: [public java.util.List dev.aquashdw.jpa.PostController.readPostAll()]
+2023-07-06 18:58:58,386 TRACE dev.aquashdw.jpa.aspect.LoggingAspect [http-nio-8080-exec-5] method name: [readPostAll]
+2023-07-06 18:58:58,386 TRACE dev.aquashdw.jpa.aspect.LoggingAspect [http-nio-8080-exec-5] declaring type: [class dev.aquashdw.jpa.PostController]
+2023-07-06 18:58:58,386 TRACE dev.aquashdw.jpa.aspect.LoggingAspect [http-nio-8080-exec-5] no arguments
+2023-07-06 18:58:58,394 TRACE dev.aquashdw.jpa.aspect.LoggingAspect [http-nio-8080-exec-5] method: [readPostAll]
+2023-07-06 18:58:58,395 TRACE dev.aquashdw.jpa.aspect.LoggingAspect [http-nio-8080-exec-5] return type: [interface java.util.List]
+2023-07-06 18:58:58,395 TRACE dev.aquashdw.jpa.aspect.LoggingAspect [http-nio-8080-exec-5] return value: [[PostDto{id=1, title='dfdf', content='df', writer='whddnr', boardId=0}]]
+2023-07-06 18:58:58,398 INFO dev.aquashdw.jpa.aspect.LoggingAspect [http-nio-8080-exec-5] List dev.aquashdw.jpa.PostController.readPostAll() executed in 12ms
+2023-07-06 18:58:58,398 INFO dev.aquashdw.jpa.aspect.LoggingAspect [http-nio-8080-exec-5] Proceed : 
